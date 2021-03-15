@@ -1,0 +1,64 @@
+{
+  "name": "Yandex.Music",
+  "version": "1.0.0",
+  "description": "This is a cross-platform application for using the Yandex music service. It was implemented due to the fact that Yandex developers ignore users of *nix-like operating systems.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Vasily Sviridov",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-wix": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "electron": "^12.0.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "Яндекс.Музыка"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {
+            "name": "Яндекс.Музыка"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {
+            "name": "Яндекс.Музыка"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-wix",
+          "config": {
+            "language": 1033,
+            "name": "Яндекс.Музыка"
+          }
+        }
+      ]
+    }
+  }
+}
