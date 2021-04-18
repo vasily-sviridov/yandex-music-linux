@@ -1,5 +1,5 @@
 {
-  "name": "Yandex.Music",
+  "name": "yandex-music",
   "version": "1.0.0",
   "description": "This is a cross-platform application for using the Yandex music service. It was implemented due to the fact that Yandex developers ignore users of *nix-like operating systems.",
   "main": "main.js",
@@ -30,7 +30,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "Яндекс.Музыка"
+            "name": "Yandex.Music"
           }
         },
         {
@@ -42,20 +42,26 @@
         {
           "name": "@electron-forge/maker-deb",
           "config": {
-            "name": "Яндекс.Музыка"
+            "name": "Yandex.Music",
+            "license": "MIT",
+            "icon": "static/yandex-music-logo.png"
           }
         },
         {
           "name": "@electron-forge/maker-rpm",
           "config": {
-            "name": "Яндекс.Музыка"
+            "name": "Yandex.Music",
+            "license": "MIT",
+            "icon": "static/yandex-music-logo.png"
           }
         },
         {
           "name": "@electron-forge/maker-wix",
           "config": {
             "language": 1033,
-            "name": "Яндекс.Музыка"
+            "name": "Yandex.Music",
+            "license": "MIT",
+            "icon": "static/yandex-music-logo.png"
           }
         }
       ]
